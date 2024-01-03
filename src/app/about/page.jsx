@@ -1,5 +1,5 @@
 
-function page() {
+function Aboutpage() {
   return (
     <div>
       About page
@@ -7,4 +7,4 @@ function page() {
   )
 }
 
-export default page
+export default Aboutpage
