@@ -1,0 +1,14 @@
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout{
+    min-width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+}
