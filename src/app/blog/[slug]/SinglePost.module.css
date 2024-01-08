@@ -47,7 +47,14 @@
   .content{
     font-size: 20px;
   }
+<<<<<<< HEAD
   
+=======
+  .avatar{
+    object-fit: cover;
+    border-radius: 50%;
+  }
+>>>>>>> c1cc1c50fda6fc5e6ce05d864e6857f42e204060
   
   @media (max-width:768px){
     .imgContainer{

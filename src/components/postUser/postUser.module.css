@@ -1,19 +1,25 @@
 .container{
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .texts{
+=======
+>>>>>>> c1cc1c50fda6fc5e6ce05d864e6857f42e204060
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+<<<<<<< HEAD
 
   .avatar{
     object-fit: cover;
     border-radius: 50%;
   }
+=======
+>>>>>>> c1cc1c50fda6fc5e6ce05d864e6857f42e204060
   
   .title{
     color: gray;

@@ -20,7 +20,10 @@
 .DS_Store
 *.pem
 
+<<<<<<< HEAD
 .env
+=======
+>>>>>>> c1cc1c50fda6fc5e6ce05d864e6857f42e204060
 # debug
 npm-debug.log*
 yarn-debug.log*
