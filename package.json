@@ -9,10 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "mongoose": "8.0",
-=======
->>>>>>> c1cc1c50fda6fc5e6ce05d864e6857f42e204060
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
