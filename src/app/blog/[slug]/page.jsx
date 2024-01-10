@@ -2,22 +2,24 @@ import Image from "next/image";
 import { Suspense } from "react";
 import styles from "./SinglePost.module.css";
 import PostUser from "../../../components/postUser/postUser";
+console.log(process.env.AUTH_SECRET);
 import { getPost } from "../../../lib/data";
-//with API
-// const getData = async (slug) => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`);
-//   if (!res.ok) {
-//     throw new Error("Something went wrong");
-//   }
-//   const data = await res.json();
-//   // console.log(data);
-//   return data;
-// };
+// with API
+const getData = async (slug) => {
+  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+  if (!res.ok) {
+    throw new Error("Something went wrong");
+  }
+  const data = await res.json();
+  // console.log(data);
+  return data;
+};
 
 export const generateMetadata = async ({ params }) => {
   const { slug } = params;
 
-  const post = await getPost(slug);
+  const post = await getData(slug);
+  // const post = await getPost(slug);
 
   return {
     title: post.title,
@@ -28,7 +30,7 @@ export const generateMetadata = async ({ params }) => {
 const SinglePostPage = async ({ params }) => {
   const { slug } = params;
   // const post = await getData(slug);
-  const post = await getPost(slug);
+  const post = await getData(slug);
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>

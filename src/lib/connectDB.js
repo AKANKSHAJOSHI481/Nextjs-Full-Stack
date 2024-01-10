@@ -1,7 +1,8 @@
 const { default: mongoose } = require("mongoose");
 
+require('dotenv').config();
 const connection = {};
-
+console.log("ENV" + process.env.MONGO_URL)
 export const connectToDB = async () => {
   try {
     if (connection.isConnected) {
